@@ -2,6 +2,8 @@
 
 OverWidget is a self-hosted Discord bot that displays your live Overwatch stats as a profile widget on Discord.
 
+![OverWidget preview](Screenshot%202026-06-30%20164932.png)
+
 ---
 
 ## Prerequisites
