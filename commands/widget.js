@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { syncUser, getUsers, saveUsers } = require('../lib/sync');
+const { syncUser, getUsers, saveUsers, initWidget } = require('../lib/sync');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -33,8 +33,21 @@ module.exports = {
       users[userId] = battletag.replace('#', '-');
       saveUsers(users);
 
+      await initWidget(userId).catch(() => {});
+
+      const snippet = `findByProps("getFeaturedApplicationIds").getFeaturedApplicationIds().push("${process.env.CLIENT_ID}");`;
+
       return interaction.reply({
-        content: `Linked **${displayTag}** to your profile widget. Run **/widget refresh** to sync your stats now.`,
+        content: [
+          `Linked **${displayTag}**. Your widget will sync automatically every 5 minutes.`,
+          '',
+          '**Step 1 — Activate the widget on your Discord profile:**',
+          'Open Discord in your **browser** (`Ctrl+Shift+I` → Console), paste and run:',
+          '```js',
+          snippet,
+          '```',
+          '**Step 2 — Force a sync now:** Run **/widget refresh**',
+        ].join('\n'),
         ephemeral: true,
       });
     }
