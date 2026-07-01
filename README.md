@@ -20,28 +20,27 @@ This section is for the person hosting the bot. Do this once.
 ### Step 1: Clone the repo and install dependencies
 
 ```bash
-git clone <your-repo-url>
-cd OWidget
+git clone https://github.com/BillMoney123/Overwidget
+cd Overwidget
 npm install
 ```
 
 ### Step 2: Create your Discord application and widget
 
-Install the **Discord Widget Creator** browser extension. It automates creating the Discord application and widget layout on the Developer Portal.
+You'll use the **Discord Widget Creator** browser extension to create the application and import the OverWidget layout automatically.
 
-- **Chrome / Edge / Brave**: Load unpacked from the `chrome-extension/` folder  
-  → `chrome://extensions` → Enable Developer Mode → Load unpacked  
-- **Firefox**: Load temporary add-on from `firefox-extension/manifest.json`  
-  → `about:debugging#/runtime/this-firefox` → Load Temporary Add-on
+**Install the extension:**
 
-> Extension source: https://github.com/TheCreativeGod/Discord-Widgets-Extension
+1. Download or clone https://github.com/TheCreativeGod/Discord-Widgets-Extension
+2. **Chrome / Edge / Brave**: Go to `chrome://extensions` → Enable Developer Mode → Load unpacked → select the `chrome-extension/` folder from the downloaded extension
+3. **Firefox**: Go to `about:debugging#/runtime/this-firefox` → Load Temporary Add-on → select `firefox-extension/manifest.json`
 
-Once installed:
+**Create the widget:**
 
-1. Go to https://discord.com/developers/applications (must be fully loaded)
+1. Go to https://discord.com/developers/applications (wait for the page to fully load)
 2. **Reload the page once** after installing the extension
 3. Click the **Widget Creator** button in the **bottom-right corner**
-4. In the JSON box at the bottom, paste the contents of **`widget-config.json`** from this repo
+4. In the JSON box at the bottom, paste the full contents of **`widget-config.json`** from this repo
 5. Click **Import** — the extension creates the application with the OverWidget layout pre-configured
 6. Solve the captcha / enter 2FA if prompted
 
@@ -113,15 +112,15 @@ This section is for anyone who wants their Overwatch stats on their Discord prof
 
 The extension adds the widget to your Discord profile automatically.
 
-### Step 2: Authorize the bot
+### Step 2: Register your BattleTag
 
-The bot needs permission to update your widget data. Run this command in the Discord server:
+Run this command in the Discord server where the bot is active:
 
 ```
 /widget link <YourBattleTag#1234>
 ```
 
-Replace `<YourBattleTag#1234>` with your actual BattleTag (e.g. `Name#1234`).
+Replace `<YourBattleTag#1234>` with your actual BattleTag (e.g. `Name#1234`). The bot will save it and start tracking your stats.
 
 ### Step 3: Sync your stats
 
