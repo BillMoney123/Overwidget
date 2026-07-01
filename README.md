@@ -41,6 +41,25 @@ This extension creates your Discord application and widget automatically.
 4. Click **Import** — the extension creates the application with the OverWidget layout and stat icons pre-configured
 5. Complete any captcha / 2FA if prompted
 
+> **Note:** After importing, all data fields will appear **empty** — this is expected. The bot hasn't pushed any stats yet. Click the **pencil icon** on each data field to confirm the mapping is correct. Each field should look like this:
+>
+> | Field | Type | Expected value |
+> |---|---|---|
+> | Battletag | Text (dynamic) | `Battletag` |
+> | PlayerTitle | Text (dynamic) | `PlayerTitle` |
+> | Rank | Text (dynamic) | `Rank` |
+> | Time_Played | Text (dynamic) | `Time_Played` |
+> | Games_Played | Text (dynamic) | `Games_Played` |
+> | Games_Won | Text (dynamic) | `Games_Won` |
+> | Elims | Text (dynamic) | `Elims` |
+> | Assists | Text (dynamic) | `Assists` |
+> | Killstreak_Best | Text (dynamic) | `Killstreak_Best` |
+> | Top_Hero | Text (dynamic) | `Top_Hero` |
+> | Image | Image URL (dynamic) | `Image` |
+> | RankIcon | Image URL (dynamic) | `RankIcon` |
+>
+> The stat icons (Untitled-1-01 through Untitled-1-06) are uploaded automatically on import — you don't need to touch those.
+
 Once done, copy from the Developer Portal:
 - **Application ID** → General Information page
 - **Bot Token** → Bot page → Reset Token
