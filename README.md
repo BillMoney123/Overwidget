@@ -120,6 +120,12 @@ Once the bot is running, use these commands in your server:
 /widget unlink                  — remove your account
 ```
 
+After running `/widget link`, the bot will reply with two browser console snippets to run and then prompt you to use `/widget refresh`. Once your stats have been pushed:
+
+1. **Refresh** your Discord profile page
+2. Go to **User Settings → Profiles → Edit Profile**
+3. Scroll down to **Activity** and add the OverWidget widget
+
 Stats sync automatically every 5 minutes.
 
 ---
