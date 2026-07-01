@@ -27,9 +27,9 @@ npm install
 
 ### Step 2: Create your Discord application and widget
 
-Install the **Discord Widget Creator** browser extension. It automates creating the Discord application and widget on the Developer Portal.
+Install the **Discord Widget Creator** browser extension. It automates creating the Discord application and widget layout on the Developer Portal.
 
-- **Chrome / Edge / Brave**: Load unpacked from `chrome-extension/` folder  
+- **Chrome / Edge / Brave**: Load unpacked from the `chrome-extension/` folder  
   → `chrome://extensions` → Enable Developer Mode → Load unpacked  
 - **Firefox**: Load temporary add-on from `firefox-extension/manifest.json`  
   → `about:debugging#/runtime/this-firefox` → Load Temporary Add-on
@@ -41,9 +41,9 @@ Once installed:
 1. Go to https://discord.com/developers/applications (must be fully loaded)
 2. **Reload the page once** after installing the extension
 3. Click the **Widget Creator** button in the **bottom-right corner**
-4. Click **▶ Start**
-5. Solve the captcha / enter 2FA if prompted
-6. When it says *"All done!"*, the widget editor opens — customize the layout here
+4. In the JSON box at the bottom, paste the contents of **`widget-config.json`** from this repo
+5. Click **Import** — the extension creates the application with the OverWidget layout pre-configured
+6. Solve the captcha / enter 2FA if prompted
 
 After the extension finishes, note down from the Developer Portal:
 - **Application ID** (General Information page)
@@ -102,14 +102,16 @@ The bot will log `Logged in as OverWidget#1234` when ready.
 
 This section is for anyone who wants their Overwatch stats on their Discord profile.
 
-### Step 1: Add the widget to your Discord profile
+### Step 1: Set up your widget using the extension
 
-1. Install the **Discord Widget Creator** extension (see links above)
-2. Go to https://discord.com/developers/applications
-3. Click **Widget Creator** → **▶ Start**
-4. The extension creates an application and adds the widget to your profile automatically
+1. Install the **Discord Widget Creator** extension (links in Part 1 above)
+2. Go to https://discord.com/developers/applications and reload the page once
+3. Click the **Widget Creator** button in the bottom-right corner
+4. Paste the contents of **`widget-config.json`** (from this repo) into the JSON box
+5. Click **Import** — the extension creates the application with the OverWidget layout pre-configured
+6. Complete any captcha / 2FA if prompted
 
-> If you already have the widget on your profile, skip this step.
+The extension adds the widget to your Discord profile automatically.
 
 ### Step 2: Authorize the bot
 
@@ -151,7 +153,7 @@ The bot has not pushed data yet. Run `/widget refresh`.
 Your Overwatch Career Profile must be set to **Public** in-game (Options → Social → Career Profile: Public).
 
 **Stats look outdated**  
-The bot syncs every hour automatically. Run `/widget refresh` to force an immediate update.
+The bot syncs every 5 minutes automatically. Run `/widget refresh` to force an immediate update.
 
 **Bot is online but commands don't appear**  
 Run `npm run deploy` again. Global commands can take up to 1 hour to propagate.

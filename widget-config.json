@@ -1,0 +1,312 @@
+{
+  "_type": "discord-widget",
+  "version": 2,
+  "display_name": "OverWidget",
+  "surfaces": {
+    "widget_bottom": {
+      "layout": "widget_bottom_stats",
+      "components": {
+        "stat_5": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Assists",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-04"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Assists"
+            }
+          }
+        },
+        "stat_1": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Time_Played",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-01"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Time Played"
+            }
+          }
+        },
+        "stat_3": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Games_Won",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-03"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Games Won"
+            }
+          }
+        },
+        "stat_2": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Games_Played",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-02"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Games Played"
+            }
+          }
+        },
+        "stat_4": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Elims",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-06"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Eliminations"
+            }
+          }
+        },
+        "stat_6": {
+          "fields": {
+            "value": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Killstreak_Best",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "0"
+              }
+            },
+            "icon": {
+              "value_type": "application_asset",
+              "presentation_type": "image",
+              "value": "Untitled-1-05"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Kill Streak - Best"
+            }
+          }
+        }
+      }
+    },
+    "add_widget_preview": {
+      "layout": "add_widget_preview_hero",
+      "components": {
+        "hero_image": {
+          "fields": {
+            "image": {
+              "value_type": "data",
+              "presentation_type": "image",
+              "value": "Image",
+              "fallback": {
+                "value_type": "application_asset",
+                "presentation_type": "image",
+                "value": "Overwatch_circle_logo_svg"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_top": {
+      "layout": "widget_top_hero",
+      "components": {
+        "title": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Battletag",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "Battletag#0000"
+              }
+            }
+          }
+        },
+        "subtitle_1": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "PlayerTitle",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "Royal Pain"
+              }
+            }
+          }
+        },
+        "subtitle_3": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Top_Hero",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "N/A"
+              }
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Top Hero"
+            }
+          }
+        },
+        "hero_image": {
+          "fields": {
+            "image": {
+              "value_type": "data",
+              "presentation_type": "image",
+              "value": "Image",
+              "fallback": {
+                "value_type": "application_asset",
+                "presentation_type": "image",
+                "value": "node_index_mjs_Icon-D_Va_webp_output"
+              }
+            }
+          }
+        },
+        "subtitle_2": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Rank",
+              "fallback": {
+                "value_type": "custom_string",
+                "presentation_type": "text",
+                "value": "N/A"
+              }
+            },
+            "icon": {
+              "value_type": "data",
+              "presentation_type": "image",
+              "value": "RankIcon"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Season Rank"
+            }
+          }
+        }
+      }
+    },
+    "mini_profile": {
+      "layout": "mini_profile_hero_stat",
+      "components": {
+        "stat": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Top_Hero"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Top Hero"
+            }
+          }
+        },
+        "hero_image": {
+          "fields": {
+            "image": {
+              "value_type": "data",
+              "presentation_type": "image",
+              "value": "Image"
+            }
+          }
+        }
+      }
+    },
+    "activity_accessory": {
+      "layout": "activity_accessory_stat",
+      "components": {
+        "stat": {
+          "fields": {
+            "text": {
+              "value_type": "data",
+              "presentation_type": "text",
+              "value": "Games_Won"
+            },
+            "label": {
+              "value_type": "custom_string",
+              "presentation_type": "text",
+              "value": "Games Won"
+            }
+          }
+        }
+      }
+    }
+  }
+}
