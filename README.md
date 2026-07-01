@@ -10,7 +10,12 @@ A self-hosted Discord bot that pushes your live Overwatch stats directly to your
 
 - [Node.js 18+](https://nodejs.org/)
 - A Discord account with **Developer Mode** enabled
-- An Overwatch account with a **public** Career Profile *(Options → Social → Career Profile: Public)*
+- An Overwatch account with a **public** Career Profile
+
+> Before setting up the widget, make sure your Overwatch Career Profile visibility is set to **Public** — otherwise the bot cannot fetch your stats.  
+> In-game: **Options → Social → Career Profile → Public**
+>
+> ![Public Career Profile setting](assets/PublicProfile.png)
 - Chrome, Edge, or Firefox
 
 ---
