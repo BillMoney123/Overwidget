@@ -151,3 +151,11 @@ Your Overwatch Career Profile must be set to **Public** in-game.
 
 **Commands don't appear in Discord**  
 Run `npm run deploy` again — global commands can take up to 1 hour to propagate.
+
+---
+
+## Support
+
+If you find OverWidget useful, consider buying me a coffee!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/billmonry12317218)
