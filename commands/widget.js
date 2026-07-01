@@ -35,18 +35,29 @@ module.exports = {
 
       await initWidget(userId).catch(() => {});
 
-      const snippet = `findByProps("getFeaturedApplicationIds").getFeaturedApplicationIds().push("${process.env.CLIENT_ID}");`;
+      const snippet1 = `findByProps("getFeaturedApplicationIds").getFeaturedApplicationIds().push("${process.env.CLIENT_ID}");`;
+      const snippet2 = [
+        'let wpRequire = webpackChunkdiscord_app.push([[Symbol()], {}, r => r]);',
+        'webpackChunkdiscord_app.pop();',
+        'let api = Object.values(wpRequire.c).find(x => x?.exports?.Bo?.get).exports.Bo;',
+        `api.put({url: \`/users/@me/widgets\`, body: {widgets: []}})`,
+      ].join('\n');
 
       return interaction.reply({
         content: [
           `Linked **${displayTag}**. Your widget will sync automatically every 5 minutes.`,
           '',
-          '**Step 1 — Activate the widget on your Discord profile:**',
+          '**Step 1 — Add the app to your featured widgets:**',
           'Open Discord in your **browser** (`Ctrl+Shift+I` → Console), paste and run:',
           '```js',
-          snippet,
+          snippet1,
           '```',
-          '**Step 2 — Force a sync now:** Run **/widget refresh**',
+          '**Step 2 — Register the widget slot:**',
+          'Then paste and run:',
+          '```js',
+          snippet2,
+          '```',
+          '**Step 3 — Force a sync now:** Run **/widget refresh**',
         ].join('\n'),
         ephemeral: true,
       });
