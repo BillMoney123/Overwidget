@@ -41,7 +41,11 @@ This extension creates your Discord application and widget automatically.
 4. Click **Import** — the extension creates the application with the OverWidget layout and stat icons pre-configured
 5. Complete any captcha / 2FA if prompted
 
-> **Note:** After importing, all data fields will appear **empty** — this is expected. The bot hasn't pushed any stats yet. Click the **pencil icon** on each data field to confirm the mapping is correct. Each field should look like this:
+> **Note:** After importing, all data fields will appear **empty** — this is expected. The bot hasn't pushed any stats yet. Click the **pencil icon** on each data field to confirm the mapping is correct.
+>
+> ![Pencil icon](assets/ClickToWrite.png)
+>
+> Each field should look like this:
 >
 > | Field | Type | Expected value |
 > |---|---|---|
