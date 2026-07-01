@@ -160,12 +160,7 @@
                                                                                                      "image":  {
                                                                                                                    "value_type":  "data",
                                                                                                                    "presentation_type":  "image",
-                                                                                                                   "value":  "Image",
-                                                                                                                   "fallback":  {
-                                                                                                                                    "value_type":  "application_asset",
-                                                                                                                                    "presentation_type":  "image",
-                                                                                                                                    "value":  "Overwatch_circle_logo_svg"
-                                                                                                                                }
+                                                                                                                   "value":  "Image"
                                                                                                                }
                                                                                                  }
                                                                                   }
@@ -226,12 +221,7 @@
                                                                                              "image":  {
                                                                                                            "value_type":  "data",
                                                                                                            "presentation_type":  "image",
-                                                                                                           "value":  "Image",
-                                                                                                           "fallback":  {
-                                                                                                                            "value_type":  "application_asset",
-                                                                                                                            "presentation_type":  "image",
-                                                                                                                            "value":  "node_index_mjs_Icon-D_Va_webp_output"
-                                                                                                                        }
+                                                                                                           "value":  "Image"
                                                                                                        }
                                                                                          }
                                                                           },
