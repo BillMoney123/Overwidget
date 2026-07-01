@@ -1,0 +1,22 @@
+{
+  "name": "discord-widget-setup",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy.mjs",
+    "setup": "node setup.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2",
+    "sharp": "^0.35.2"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
